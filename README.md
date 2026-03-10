@@ -1,22 +1,24 @@
 # Automated Code Analyzer System
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Status](https://img.shields.io/badge/Project-Completed-green)
+![Project](https://img.shields.io/badge/Project-Code%20Analyzer-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-
-## Overview
-
-The **Automated Code Analyzer System** is a tool that automatically analyzes source code and detects potential issues such as bugs, bad coding practices, high complexity, and maintainability problems.
-
-The system helps developers improve code quality by providing **instant feedback and suggestions** without the need for manual code review.
-
-This project demonstrates the implementation of **static code analysis techniques** using Python.
 
 ---
 
-## Problem Statement
+# Overview
 
-Manual code review is time-consuming and developers often miss hidden bugs or inefficient code patterns.
+The **Automated Code Analyzer System** is a tool designed to automatically analyze source code and detect potential issues such as bugs, inefficient code patterns, high complexity, and poor coding practices.
+
+The goal of this system is to help developers improve **code quality, readability, and maintainability** by providing automated feedback and suggestions.
+
+This project demonstrates the concept of **static code analysis** using Python.
+
+---
+
+# Problem Statement
+
+Manual code review is time-consuming and developers may overlook hidden bugs or inefficient logic.
 
 This project solves the problem by:
 
@@ -28,180 +30,138 @@ This project solves the problem by:
 
 ---
 
-## Key Features
+# Key Features
 
 ### Static Code Analysis
-Analyzes source code without executing it.
+Analyzes code without executing it.
 
 ### Bug Detection
-Detects common coding errors such as:
+Detects common issues such as:
 - Unused variables
 - Logical errors
-- Inefficient loops
+- Infinite loops
+- Poor variable naming
 
-### Code Quality Analysis
+### Code Quality Check
 Identifies:
 - Bad coding practices
-- Poor formatting
 - Duplicate code
+- Poor formatting
 
 ### Complexity Analysis
-Evaluates code complexity using metrics like:
+Measures complexity using:
 - Cyclomatic complexity
-- Function length
 - Nested loops
+- Function length
 
 ### Automated Report Generation
-Produces reports containing:
+Produces a report containing:
 - Errors
 - Warnings
 - Suggestions
 
 ---
 
-## Tech Stack
+# Tech Stack
 
 | Component | Technology |
-|-----------|------------|
+|----------|-----------|
 | Programming Language | Python |
-| Backend Logic | Python |
 | Code Parsing | Python AST |
-| Version Control | Git & GitHub |
-| Interface (optional) | HTML, CSS |
-
----
-
-## System Architecture
-
-## System Architecture
-## System Architecture
-
-```mermaid
-graph TD
-A[User Uploads Code File] --> B[Code Parser Module]
-B --> C[Code Analysis Engine]
-C --> D[Bug Detection]
-C --> E[Complexity Analysis]
-C --> F[Style Check]
-D --> G[Report Generator]
-E --> G
-F --> G
-G --> H[Analysis Report]
-
-
-<img width="1357" height="1113" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/1b55739f-e91e-4614-bf99-91405af7e465" />
-
-
-# Automated Code Analyzer System
-
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Status](https://img.shields.io/badge/Project-Completed-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
-
-## Overview
-
-The **Automated Code Analyzer System** is a tool that automatically analyzes source code and detects potential issues such as bugs, bad coding practices, high complexity, and maintainability problems.
-
-The system helps developers improve code quality by providing **instant feedback and suggestions** without the need for manual code review.
-
-This project demonstrates the implementation of **static code analysis techniques** using Python.
-
----
-
-## Problem Statement
-
-Manual code review is time-consuming and developers often miss hidden bugs or inefficient code patterns.
-
-This project solves the problem by:
-
-- Automatically scanning source code
-- Detecting common coding mistakes
-- Measuring code complexity
-- Suggesting improvements
-- Generating structured reports
-
----
-
-## Key Features
-
-### Static Code Analysis
-Analyzes source code without executing it.
-
-### Bug Detection
-Detects common coding errors such as:
-- Unused variables
-- Logical errors
-- Inefficient loops
-
-### Code Quality Analysis
-Identifies:
-- Bad coding practices
-- Poor formatting
-- Duplicate code
-
-### Complexity Analysis
-Evaluates code complexity using metrics like:
-- Cyclomatic complexity
-- Function length
-- Nested loops
-
-### Automated Report Generation
-Produces reports containing:
-- Errors
-- Warnings
-- Suggestions
-
----
-
-## Tech Stack
-
-| Component | Technology |
-|-----------|------------|
-| Programming Language | Python |
 | Backend Logic | Python |
-| Code Parsing | Python AST |
-| Version Control | Git & GitHub |
-| Interface (optional) | HTML, CSS |
+| Version Control | Git |
+| Repository | GitHub |
 
 ---
 
-## System Architecture
+# System Architecture
++----------------------+
+| User Input |
+| (Source Code File) |
++----------+-----------+
+|
+v
++----------------------+
+| Code Parser |
+| (AST Parser) |
++----------+-----------+
+|
+v
++----------------------+
+| Code Analyzer |
+| - Bug Detection |
+| - Complexity Check |
+| - Style Analysis |
++----------+-----------+
+|
+v
++----------------------+
+| Report Generator |
++----------+-----------+
+|
+v
++----------------------+
+| Output Report |
+| (Warnings/Suggestions)|
++----------------------+
 
-```mermaid
-graph TD
 
-A[User Uploads Code File] --> B[Code Parser Module]
-B --> C[Code Analysis Engine]
+---
 
-C --> D[Bug Detection]
-C --> E[Complexity Analysis]
-C --> F[Style & Quality Check]
+# System Workflow
 
-D --> G[Report Generator]
-E --> G
-F --> G
+User uploads source code
+|
+v
+Code is parsed using AST
+|
+v
+Analyzer scans the code
+|
+v
+Issues and complexity detected
+|
+v
+Report is generated
+|
+v
+Developer receives suggestions
 
-G --> H[Analysis Report]
-Automated-Code-Analyzer/
+
+---
+
+# Project Structure
+
+
+code-complexity-analyzer
 │
 ├── analyzer.py
 ├── parser.py
 ├── complexity_checker.py
 ├── report_generator.py
 │
-├── sample_code/
-│   └── test_file.py
+├── sample_code
+│ └── test_file.py
 │
 ├── requirements.txt
 └── README.md
 
 
+---
+
+<img width="1902" height="730" alt="Screenshot 2026-03-10 104919" src="https://github.com/user-attachments/assets/1e5621fc-b808-4743-9378-b21dbb3c3c62" />
+
+Screenshot 1 – Code input
 
 
+<img width="1919" height="792" alt="Screenshot 2026-03-10 110919" src="https://github.com/user-attachments/assets/e07928ea-e931-46ff-9b5f-7910898bd679" />
+
+Screenshot 2 - Analysis result
 
 
+<img width="1903" height="1010" alt="Screenshot 2026-03-10 103222" src="https://github.com/user-attachments/assets/413e8762-005e-4040-9e01-442f9e70957c" />
 
-
+Screenshot 3 – Generated report
 
 
 
