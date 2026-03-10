@@ -148,20 +148,25 @@ code-complexity-analyzer
 
 
 ---
-
-<img width="1902" height="730" alt="Screenshot 2026-03-10 104919" src="https://github.com/user-attachments/assets/1e5621fc-b808-4743-9378-b21dbb3c3c62" />
-
 Screenshot 1 – Code input
 
 
-<img width="1919" height="792" alt="Screenshot 2026-03-10 110919" src="https://github.com/user-attachments/assets/e07928ea-e931-46ff-9b5f-7910898bd679" />
+<img width="1902" height="730" alt="Screenshot 2026-03-10 104919" src="https://github.com/user-attachments/assets/1e5621fc-b808-4743-9378-b21dbb3c3c62" />
+
+
 
 Screenshot 2 - Analysis result
 
 
-<img width="1903" height="1010" alt="Screenshot 2026-03-10 103222" src="https://github.com/user-attachments/assets/413e8762-005e-4040-9e01-442f9e70957c" />
+<img width="1919" height="792" alt="Screenshot 2026-03-10 110919" src="https://github.com/user-attachments/assets/e07928ea-e931-46ff-9b5f-7910898bd679" />
+
+
 
 Screenshot 3 – Generated report
+
+
+<img width="1903" height="1010" alt="Screenshot 2026-03-10 103222" src="https://github.com/user-attachments/assets/413e8762-005e-4040-9e01-442f9e70957c" />
+
 
 
 
