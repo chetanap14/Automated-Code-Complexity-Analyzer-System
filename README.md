@@ -74,46 +74,22 @@ Produces reports containing:
 ## System Architecture
 
 ## System Architecture
+## System Architecture
 
 ```mermaid
 graph TD
 A[User Uploads Code File] --> B[Code Parser Module]
 B --> C[Code Analysis Engine]
-
 C --> D[Bug Detection]
 C --> E[Complexity Analysis]
-C --> F[Style & Quality Check]
-
+C --> F[Style Check]
 D --> G[Report Generator]
 E --> G
 F --> G
-
 G --> H[Analysis Report]
 
 
----
-
-# Correct Workflow Diagram
-
-Also make sure this one is written like this:
-
-```markdown
-## System Workflow
-
-```mermaid
-flowchart TD
-A[User Uploads Code] --> B[Code Parsing]
-B --> C[Static Code Analysis]
-
-C --> D[Bug Detection]
-C --> E[Code Quality Check]
-C --> F[Complexity Analysis]
-
-D --> G[Report Generation]
-E --> G
-F --> G
-
-G --> H[Display Results]
+<img width="1357" height="1113" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/1b55739f-e91e-4614-bf99-91405af7e465" />
 
 
 # Automated Code Analyzer System
